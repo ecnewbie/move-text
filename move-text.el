@@ -80,6 +80,10 @@
                        (not (version-list-<
                              (version-to-list emacs-version)
                              '(24 3 50 0))))
+                     (eval-when-compile
+                       (version-list-<
+                        (version-to-list emacs-version)
+                        '(25 1 1 0)))
                      (< arg 0))
             (forward-line -1)))
         (forward-line -1))
